@@ -19,8 +19,26 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'AW-17889351650');
+  </script>
+
+  <!-- Event snippet for Compra -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17889351650/WJhTCKjXiOobEOKvp9JC',
+        'value': 1.0,
+        'currency': 'BRL',
+        'transaction_id': '',
+        'event_callback': callback
+      });
+      return false;
+    }
   </script>
 
   <style>
@@ -154,11 +172,10 @@
 
     <h2>Aprenda do básico ao avançado e desenvolva habilidades valorizadas pelo mercado</h2>
 
+    <!-- BOTÃO 1 -->
     <a class="btn"
-       href="https://go.hotmart.com/M104003220J"
-       target="_blank"
-       rel="noopener"
-       onclick="gtag('event','conversion',{'send_to':'AW-17889351650/WJhTCkJXiObEOkVp9JC'});">
+       href="https://go.hotmart.com/M104003220J?ap=2867"
+       onclick="return gtag_report_conversion('https://go.hotmart.com/M104003220J?ap=2867');">
       🎓 ACESSAR O CURSO COM SEGURANÇA
     </a>
 
@@ -179,11 +196,10 @@
       ⭐ Curso bem avaliado • Milhares de alunos • Plataforma Hotmart
     </div>
 
+    <!-- BOTÃO 2 -->
     <a class="btn"
-       href="https://go.hotmart.com/M104003220J"
-       target="_blank"
-       rel="noopener"
-       onclick="gtag('event','conversion',{'send_to':'AW-17889351650/WJhTCkJXiObEOkVp9JC'});">
+       href="https://go.hotmart.com/M104003220J?ap=2867"
+       onclick="return gtag_report_conversion('https://go.hotmart.com/M104003220J?ap=2867');">
       🚀 QUERO COMEÇAR AGORA
     </a>
 
